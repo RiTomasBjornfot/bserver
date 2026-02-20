@@ -1,0 +1,9 @@
+[global]
+root = "/home/<user>/servers/projects"
+domain = "sensorsystem.ri.se"
+https_port = 8000
+nginx_routes_file = "/etc/nginx/snippets/sensorsystem_routes.conf"
+
+[projects]
+# projekt1 = 9001
+

@@ -1,0 +1,18 @@
+PLAN:
+Alla projekt kommer att ligga under samma mapp så man skulle kunna ha "root" i registry.toml 
+Har ett python libb som innhåller all funktionallitet som behövs.
+Användaren använder sig en "main.py" som i sin tur använder libbet.
+
+Jag vill ha följande funktionalitet i libbet: 
+
+1. activate(project_name, http_port). Sätter upp ett projekt. 
+	- Uppdaterar registry.toml. 
+	- Uppdaterar Nginx konfig 
+	- Gör en "hello world" dvs web.py som skriver bara "hello world: <projekt name>" på websidan.
+
+2. deactivate(project_name). Tar bort ett från "webben". OBS tar inte bort några filer i "root".
+	- Uppdaterar registry.toml. 
+	- Uppdaterar Nginx konfig 
+3. check()
+	- Testar att allting är ok.
+	- Om inte skickar funktionen ut ett felmeddelande. 
